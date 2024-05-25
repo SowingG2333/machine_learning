@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185fb124-1ab3-4da8-bb8e-8d1bd644c10c" name="更改" comment="first commit" />
+    <list default="true" id="185fb124-1ab3-4da8-bb8e-8d1bd644c10c" name="更改" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jaccard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/katz.py" beforeDir="false" afterPath="$PROJECT_DIR$/katz.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,7 +34,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SowingG2333/machine_learning&quot;,
+    &quot;url&quot;: &quot;git@github.com:SowingG2333/machine_learning.git&quot;,
     &quot;accountId&quot;: &quot;37e4f16c-4ce6-4f00-ab68-1530e0463f87&quot;
   }
 }</component>
@@ -29,23 +42,31 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2fzimjbxbZZoEVeqtHLJZyXOUgV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.common_neighbor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jaccard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.katz.executor&quot;: &quot;Run&quot;,
+    &quot;Python.local_path.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sin.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/32438/PycharmProjects/graphic_edge_prediction&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/32438/Desktop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -55,7 +76,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="jaccard" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="graphic_edge_prediction" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +90,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\32438\PycharmProjects\graphic_edge_prediction\jaccard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,6 +118,26 @@
       <updated>1714810467740</updated>
       <workItem from="1714810469925" duration="425000" />
       <workItem from="1714810920943" duration="617000" />
+      <workItem from="1714811809845" duration="1818000" />
+      <workItem from="1714892462428" duration="237000" />
+      <workItem from="1714892709516" duration="252000" />
+      <workItem from="1714892972665" duration="2637000" />
+      <workItem from="1714923727866" duration="831000" />
+      <workItem from="1714924620209" duration="2655000" />
+      <workItem from="1714996629201" duration="1589000" />
+      <workItem from="1715010945847" duration="1578000" />
+      <workItem from="1715058472650" duration="16000" />
+      <workItem from="1715058519172" duration="1887000" />
+      <workItem from="1715082589318" duration="1796000" />
+      <workItem from="1715084409292" duration="101000" />
+      <workItem from="1715084522565" duration="85000" />
+      <workItem from="1715084616780" duration="243000" />
+      <workItem from="1715084872639" duration="648000" />
+      <workItem from="1715085608996" duration="211000" />
+      <workItem from="1715144321348" duration="743000" />
+      <workItem from="1715233343795" duration="314000" />
+      <workItem from="1715238932401" duration="107000" />
+      <workItem from="1715772741136" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -106,11 +147,30 @@
       <option name="project" value="LOCAL" />
       <updated>1714811315248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1714811948477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714811948477</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -118,5 +178,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/graphic_edge_prediction$main.coverage" NAME="main 覆盖结果" MODIFIED="1714810764331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graphic_edge_prediction$katz.coverage" NAME="katz 覆盖结果" MODIFIED="1714812577047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graphic_edge_prediction$sin.coverage" NAME="sin 覆盖结果" MODIFIED="1715144649429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graphic_edge_prediction$local_path.coverage" NAME="local_path 覆盖结果" MODIFIED="1715084022599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graphic_edge_prediction$jaccard.coverage" NAME="jaccard 覆盖结果" MODIFIED="1715144440511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graphic_edge_prediction$common_neighbor.coverage" NAME="common_neighbor 覆盖结果" MODIFIED="1715238939004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
