@@ -147,7 +147,7 @@ def katz(data, random_state):
     accuracy = correct_count / 100
     return accuracy
 
-with open('data_0.txt', 'r') as f:
+with open('.data/data_0.txt', 'r') as f:
     data = f.readlines()
 
 # 定义一系列的random_state值

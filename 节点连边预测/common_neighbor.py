@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from scipy.sparse import coo_matrix
 
-with open('data_2.txt', 'r') as f:
+with open('.data/data_2.txt', 'r') as f:
     data = f.readlines()
 
 # 将节点写入矩阵
