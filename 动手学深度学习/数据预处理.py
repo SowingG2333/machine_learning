@@ -41,7 +41,7 @@ rows = rows.fillna(rows.mean())
 rows_tensor = torch.tensor(rows.to_numpy(dtype=float))
 print(rows_tensor)
 
-# 如果采用删除法处理缺失值（所有行都会删除）
+# 如果采用删除法处理缺失值
 rows_delete = data.iloc[:, :].dropna()
 print(rows_delete)
 rows_delete_tensor = torch.tensor(rows_delete.to_numpy(dtype=float))
