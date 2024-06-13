@@ -34,9 +34,6 @@ def common_neighbor(data, random_state):
     # 计算邻接矩阵的平方
     adj_matrix_squared = sparse_adj_matrix.dot(sparse_adj_matrix)
 
-    # 获取邻接矩阵平方中非零元素的索引
-    non_zero_indices = adj_matrix_squared.nonzero()
-
     # 创建一个全零的邻接矩阵
     test_adj_matrix = np.zeros((len(nodes), len(nodes)), dtype=int)
 
@@ -46,6 +43,7 @@ def common_neighbor(data, random_state):
         j = node_to_index[row[1]]
         test_adj_matrix[i, j] = 1
 
+    # 将平方矩阵转换为密集矩阵（后续操作需要在密集矩阵上进行）
     adj_matrix_squared_dense = adj_matrix_squared.toarray()
 
     # 获取平方矩阵中由大到小前100个元素的索引
@@ -147,11 +145,11 @@ def katz(data, random_state):
     accuracy = correct_count / 100
     return accuracy
 
-with open('.data/data_0.txt', 'r') as f:
+with open('D:\Code\机器学习\深度学习\machine_learning\节点连边预测\data\data_0.txt', 'r') as f:
     data = f.readlines()
 
 # 定义一系列的random_state值
-random_states = np.arange(40, 50)
+random_states = np.arange(0, 100)
 
 # 初始化两个列表，用于记录每个random_state值下的预测准确率
 cn_accuracies = []
@@ -164,6 +162,10 @@ for random_state in random_states:
     cn_accuracies.append(cn_accuracy)
     katz_accuracies.append(katz_accuracy)
     print(random_state)
+
+    # 将结果写入文件
+    with open('results.txt', 'a') as f:
+        f.write(f'Random state: {random_state}, Common Neighbor accuracy: {cn_accuracy}, Katz accuracy: {katz_accuracy}\n')
 
 # 绘制预测准确率随random_state值变化的折线图
 plt.plot(random_states, cn_accuracies, label='Common Neighbor')
