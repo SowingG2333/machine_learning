@@ -53,11 +53,11 @@ def common_neighbor(data, random_state):
     new_indices = []
 
     # 创建一个反向映射，将索引映射回原始的节点编号
-    index_to_node = {index: node.item() for node, index in node_to_index.items()}
+    index_to_node = {index: node for node, index in node_to_index.items()}
 
     # 遍历前100个索引
     for row, col in zip(*top_100_indices):
-        new_indices.append((index_to_node[row.item()], index_to_node[col.item()]))
+        new_indices.append((index_to_node[int(row.item())], index_to_node[int(col.item())]))
 
     # 与测试集中的数据进行比较，获取预测准确率
     correct_count = 0
