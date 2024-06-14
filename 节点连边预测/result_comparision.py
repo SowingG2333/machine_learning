@@ -11,13 +11,13 @@ def common_neighbor(data, random_state):
         matrix[i] = list(map(int, line.strip().split('\t')))
 
     # 对矩阵进行训练集和测试集的划分
-    train_data, test_data = train_test_split(matrix, test_size=0.5, random_state=random_state)
+    train_data, test_data = train_test_split(matrix, test_size=0.25, random_state=random_state)
 
     # 原矩阵的唯一节点编号
     nodes = np.unique(matrix)
 
-    # 创建一个对角线为1的邻接矩阵
-    adj_matrix = np.eye(len(nodes), dtype=int)
+    # 创建一个邻接矩阵
+    adj_matrix = np.zeros((len(nodes),len(nodes)), dtype=int)
 
     # 创建一个字典，将节点编号映射到邻接矩阵的索引
     node_to_index = {node: index for index, node in enumerate(nodes)}
@@ -80,7 +80,7 @@ def katz(data, random_state):
         matrix[i] = list(map(int, line.strip().split('\t')))
 
     # 对矩阵进行训练集和测试集的划分
-    train_data, test_data = train_test_split(matrix, test_size=0.5, random_state=random_state)
+    train_data, test_data = train_test_split(matrix, test_size=0.25, random_state=random_state)
 
     # 原矩阵的唯一节点编号
     nodes = np.unique(matrix)
@@ -89,7 +89,7 @@ def katz(data, random_state):
     node_to_index = {node: index for index, node in enumerate(nodes)}
 
     # 遍历排序后的训练矩阵，设置邻接矩阵的元素
-    katz_train_adj_matrix = np.eye(len(nodes), dtype=int)
+    katz_train_adj_matrix = np.zeros((len(nodes),len(nodes)), dtype=int)
 
     for row in train_data:
         i = node_to_index[row[0]]
@@ -149,7 +149,7 @@ with open('D:\Code\机器学习\深度学习\machine_learning\节点连边预测
     data = f.readlines()
 
 # 定义一系列的random_state值
-random_states = np.arange(0, 100)
+random_states = np.arange(43, 50)
 
 # 初始化两个列表，用于记录每个random_state值下的预测准确率
 cn_accuracies = []

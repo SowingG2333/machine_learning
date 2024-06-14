@@ -21,7 +21,7 @@ nodes = np.unique(matrix)
 node_to_index = {node: index for index, node in enumerate(nodes)}
 
 # 遍历排序后的训练矩阵，设置邻接矩阵的元素
-katz_train_adj_matrix = np.eye(len(nodes), dtype=int)
+katz_train_adj_matrix = np.zeros((len(nodes),len(nodes)), dtype=int)
 
 for row in train_data:
     i = node_to_index[row[0]]

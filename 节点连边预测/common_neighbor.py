@@ -19,8 +19,8 @@ print("测试集是：\n", test_data)
 nodes = np.unique(matrix)
 print("唯一的节点编号是：\n", nodes)
 
-# 创建一个对角线为1的邻接矩阵
-adj_matrix = np.eye(len(nodes), dtype=int)
+# 创建一个邻接矩阵
+adj_matrix = np.zeros((len(nodes),len(nodes)), dtype=int)
 
 # 创建一个字典，将节点编号映射到邻接矩阵的索引
 node_to_index = {node: index for index, node in enumerate(nodes)}
@@ -41,12 +41,6 @@ adj_matrix_squared = sparse_adj_matrix.dot(sparse_adj_matrix)
 
 # 获取邻接矩阵平方中非零元素的索引
 non_zero_indices = adj_matrix_squared.nonzero()
-
-# 获取邻接矩阵平方中非零元素的个数
-non_zero_count = len(non_zero_indices[0])
-
-print("邻接矩阵的平方是：\n", adj_matrix_squared.toarray())
-print("邻接矩阵的平方中非零元素的个数是：", non_zero_count)
 
 # 创建一个全零的邻接矩阵
 test_adj_matrix = np.zeros((len(nodes), len(nodes)), dtype=int)
