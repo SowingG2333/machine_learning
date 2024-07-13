@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import torch
-import math
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset, Subset
 from sklearn.model_selection import KFold
